@@ -25,6 +25,7 @@ export function handleNewPair(event: PairCreated): void {
     factory.untrackedVolumeUSD = ZERO_BD
     factory.totalLiquidityUSD = ZERO_BD
     factory.txCount = ZERO_BI
+    factory.buyerCount = ZERO_BI
 
     // create new bundle
     let bundle = new Bundle('1')

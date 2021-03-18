@@ -1,6 +1,6 @@
 specVersion: 0.0.2
 description: Quickswap is a decentralized protocol for automated token exchange on Matic.
-repository: https://github.com/sameepsi/quickswapv2-subgraph
+repository: https://github.com/andyjagoe/quickswap-v2-metrics
 schema:
   file: ./schema.graphql
 dataSources:
@@ -43,6 +43,7 @@ templates:
       language: wasm/assemblyscript
       file: ./src/mappings/core.ts
       entities:
+        - Buyer
         - Pair
         - Token
       abis:

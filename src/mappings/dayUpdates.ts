@@ -21,6 +21,9 @@ export function updateUniswapDayData(event: EthereumEvent): void {
     uniswapDayData.totalLiquidityUSD = ZERO_BD
     uniswapDayData.totalLiquidityETH = ZERO_BD
     uniswapDayData.txCount = ZERO_BI
+    uniswapDayData.newBuyerCount = ZERO_BI
+    uniswapDayData.activeBuyers = []
+    uniswapDayData.activeBuyerCount = ZERO_BI
     uniswapDayData.save()
   }
   uniswapDayData = UniswapDayData.load(dayID.toString())
